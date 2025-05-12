@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PikaChu GBA Emulator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="emulator-container">
+        <div class="emulator-wrapper">
+            <canvas id="gameCanvas" width="240" height="160"></canvas>
+            
+            <div class="controls-container">
+                <input type="file" id="romUpload" accept=".gba" class="rom-upload">
+                <button id="startButton" class="start-button">Start Game</button>
+            </div>
+
+            <div class="game-controls">
+                <div class="dpad">
+                    <button class="dpad-up">▲</button>
+                    <button class="dpad-left">◀</button>
+                    <button class="dpad-right">▶</button>
+                    <button class="dpad-down">▼</button>
+                </div>
+
+                <div class="action-buttons">
+                    <button class="btn-a">A</button>
+                    <button class="btn-b">B</button>
+                    <button class="btn-start">Start</button>
+                    <button class="btn-select">Select</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="emulator.js"></script>
+</body>
+</html>
